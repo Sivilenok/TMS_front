@@ -1,0 +1,106 @@
+.rewies {
+
+    .customers {
+      padding: 30px;
+  
+      &_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 50px 0;
+        color: #000000;
+      }
+  
+      &_secondary-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        padding: 50px 0;
+        color: #86878B;
+      }
+    }
+  
+    .comments {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1170px;
+  
+      &__customer {
+        position: relative;
+        width: 370px;
+        height: 200px;
+        background: #E2E2E2;
+        border-radius: 10px;
+  
+         &__::after {
+            content: '';
+            position: absolute;
+            border: 15px solid transparent;
+            border-top: 20px solid #e2e2e2;
+            bottom: -30px;
+            right: 270px;
+         }
+      }
+  
+      .customer__text {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 21px;
+        color: #86878B;
+        margin: 0;
+        padding: 0 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  
+    .customers {
+  
+      &__user-descr {
+        width: 370px;
+        height: 200px;
+      }
+      
+      &__avatar {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+      }
+      
+      &_name {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        padding-left: 90px;
+        color: #000000;
+      }
+      
+      &_post {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        padding-left: 90px;
+        padding-top: 20px;
+        color: #000000;
+      }
+    }
+  }
+  

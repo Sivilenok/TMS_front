@@ -1,22 +1,24 @@
-.button {
-    display: block;
-    width: 370px;
-    height: 80px;
+.btn {
+    width: 270px;
+    height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     border: none;
-    border-color: transparent;
+
+    &-red {
+        background-color: #c56565;
+        color: #FFFFFF;
+        transition: background-color .3s ease-in-out;
+      }     
 }
 
-.button--primary {
-    background-color: #FF4343;
-    color: #fff;
-    font-family: $fontRaleway;
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: background-color .3s ease-in-out;
-}
-
-.button--primary:hover, .button--primary:active {
-    cursor: pointer;
-    background-color: #972b2b;
+.button {
+  width: 270px;
+  height: 60px;
+  border: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: #EC7979;
+  color: #FFFFFF;
 }
