@@ -197,8 +197,8 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   border: 30px solid transparent;
   border-top: 40px solid #e2e2e2;
-  bottom: 0;
   left: 20%;
+  bottom: -25%;
 }
 
 .customers__user-info {
@@ -213,9 +213,9 @@ h1, h2, h3, h4, h5, h6, p {
   color: #86878B;
   margin: 30px;
   padding: 30px 30px;
-  top: 50%;
   background:#E2E2E2;
   border-radius: 10px;
+  position: relative;
 }
 
 
@@ -620,4 +620,59 @@ h1, h2, h3, h4, h5, h6, p {
   color: #86878B;
   padding: 10px 0px;
   text-align: start;
+}
+
+.banner_2-container {
+  display: flex;
+  padding: 0 100px;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+
+.banner_2 {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/bg.png) center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+ 
+.banner_2-separator {
+  width: 170px;
+  height: 1px;
+  margin: 45px 350px 45px;
+  background-color: white;
+}
+
+.banner_2-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.banner_2-descr {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.banner_2-btn {
+  background: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: white;
+  height: 58px;
+  width: 270px;
+  border-radius: 0px;
+  margin: 60px 300px;
 }
