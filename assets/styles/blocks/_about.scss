@@ -1,16 +1,16 @@
-.ABOUT {
+.about-us {
     width: 1170px;
     height: 665px;
-  
-    .about_us {
-  
+    display: flex;
+    padding-top: 50px;
+}
       &__skills-list {
         display:flex;
         width: 100%;
         height: 100%;
         padding: 0px;
         list-style: none;
-  
+      }  
         .skill-item {
   
           &__descr {
@@ -24,7 +24,9 @@
           }
           
           &__image--wrapper {
-          padding: 0 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
           
           &__image {
@@ -42,12 +44,6 @@
           }
         }
   
-        
-        .skill-list__skill-item {
-          width: 100%;
-          justify-content: space-between;
-        }
-      }
   
       &__secondary-title {
         font-family: 'Raleway';
@@ -57,7 +53,7 @@
         color: #86878B;
         text-align: center;
         text-transform: capitalize;
-        padding: 50px;
+        margin-bottom: 110px;
       }
   
       &__main-title {
@@ -70,5 +66,5 @@
         text-transform: capitalize;
         padding: 50px;
       }
-    }
-  }
+  
+  

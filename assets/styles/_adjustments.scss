@@ -28,6 +28,8 @@ ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    text-align: center;
 }
 
 a {
@@ -68,5 +70,11 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+.banner__separator {
+    width: 170px;
+    height: 1px;
+    margin: 55px 0px 45px;
+    background-color: white;
+}
 
        

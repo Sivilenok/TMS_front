@@ -9,36 +9,39 @@
     <title>project</title>
   </head>
   <body>
-    <header class="header container">
-      <div class="header-container">
+    <header class="header">
+      <div class="container header-container">
           <img class="axit" src="./assets/images/logo.png" alt="logo.png">
-         <ul class="nav_list">
-          <li class="nav_list-item">Features<a href="Contact"></a></li>
-          <li class="nav_list-item">About<a href="About"></a></li>
-          <li class="nav_list-item">Pricing<a href="About"></a></li>
-          <li class="nav_list-item">Reviews<a href="Home"></a></li>
-          <li class="nav_list-item">Contact<a href="Contact"></a></li>
+         <ul class="nav__list">
+          <li class="nav__list-item">Features<a href="Contact"></a></li>
+          <li class="nav__list-item">About<a href="About"></a></li>
+          <li class="nav__list-item">Pricing<a href="About"></a></li>
+          <li class="nav__list-item">Reviews<a href="Home"></a></li>
+          <li class="nav__list-item">Contact<a href="Contact"></a></li>
          </ul>
       </div>
     </header>
 
-    <div class="banner">
-      <section class="banner__container">
-        <div class="banner__bg">
-          <img class="banner__image" src="./assets/images/banner__image.png" alt="banner__image.png">
-            <div class="centered">
-              <img class="banner__logo" src="./assets/images/logo.png" alt="logo.png">
+    <section class="banner">
+        <div class="container banner__container">
+          <div class="banner__details-wrapper">
+              <img class="banner__logo" src="./assets/images/AXIT-logo.png" alt="AXIT-logo.png">
               <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
               <div class="banner__separator"></div>
               <h5 class="banner__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <button class="banner__btn">Download</button>
-              <div class="form">
-
-              </div>
+          </div>
+          <form class="forms">
+            <div class="forms__controls">
+              <h4 class="form__title">Try Your <span class="form__title--text-red">FREE</span>Trial Today</h4>
+              <input type="text" class="form__control" placeholder="Name">
+              <input type="email" class="form__control" placeholder="Email">
+              <input type="password" class="form__control" placeholder="Password">
             </div>
+            <button class="form__get-start-btn">Get started</button>
+          </form>
         </div>
-      </section>
-    </div>
+    </section>
 
     <section class="tabs">
       <div class="tabs__container">
@@ -67,10 +70,10 @@
       </div>
     </section>
 
-    <div class="ABOUT">
-      <section class="about-us">
+    <section class="about-us">
+      <div class="container">
         <h2 class="about-us__main-title">WHY THIS IS AWESOME</h2>
-        <div class="separator"></div>
+        <div class="separator--orange"></div>
         <p class="about-us__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
         <ul class="about-us__skills-list">
@@ -96,13 +99,13 @@
             <p class="skill-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <div class="pricing_options">
-      <section class="price">
+    <section class="pricing__options">
+      <div class="container price_container">
         <h2 class="pricing_title">PRICING OPTIONS</h2>
-        <div class="separator"></div>
+        <div class="separator--orange"></div>
         <p class="pricing__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
         <div class="options-container">
@@ -152,55 +155,41 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <div class="rewies">
+    <section class="rewies">
       <div class="customers">
         <h2 class="customers_title">What our customers are saying</h2>
-        <div class="separator"></div>
+        <div class="separator--orange"></div>
         <p class="customers_secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div class="comments">
-        <div class="comments__customer">
-          <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
-        </div>
+          <div class="customers__container">
+            <div class="comments">
+              <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+              <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+              <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+            </div>
 
-        <div class="comments__customer">
-          <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
-        </div>
-
-        <div class="comments__customer">
-          <p class="customer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
-        </div>
-      </div>
-
-      <div class="customers__container">
-        <div class="customers__user-descr">
-          <img class="customers__avatar" src="./assets/images/Davis Rhiel Madsen.png" alt="Davis Rhiel Madsen" />
-          <div class="customers__user-info">
-            <h3 class="customers_name">Davis Rhiel Madsen</h3>
-            <p class="customers_post">Manager</p>
+              <div class="customers__user-descr">
+                <img class="customers__avatar" src="./assets/images/Davis Rhiel Madsen.png" alt="Davis Rhiel Madsen" />
+                <div class="customers__user-info">
+                  <h3 class="customers_name">Davis Rhiel Madsen</h3>
+                  <p class="customers_post">Manager</p>
+                </div>
+                <img class="customers__avatar" src="./assets/images/Jaydon Rosser.png" alt="Jaydon Rosser" />
+                  <div class="customers__user-info">
+                    <h3 class="customers_name">Davis Rhiel Madsen</h3>
+                    <p class="customers_post">Manager</p>
+                  </div>
+                <img class="customers__avatar" src="./assets/images/Cooper Dorwart.png" alt="Cooper Dorwart" />
+                <div class="customers__user-info">
+                  <h3 class="customers_name">Davis Rhiel Madsen</h3>
+                  <p class="customers_post">Manager</p>
+                </div>
+              </div>
           </div>
-        </div>
-
-        <div class="customers__user-descr">
-          <img class="customers__avatar" src="./assets/images/Jaydon Rosser.png" alt="Jaydon Rosser" />
-          <div class="customers__user-info">
-            <h3 class="customers_name">Davis Rhiel Madsen</h3>
-            <p class="customers_post">Manager</p>
-          </div>
-        </div>
-
-        <div class="customers__user-descr">
-          <img class="customers__avatar" src="./assets/images/Cooper Dorwart.png" alt="Cooper Dorwart" />
-          <div class="customers__user-info">
-            <h3 class="customers_name">Davis Rhiel Madsen</h3>
-            <p class="customers_post">Manager</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>  
   </body>
 </html>
