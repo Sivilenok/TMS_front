@@ -1,0 +1,22 @@
+.container {
+    &__footer-container {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.footer {
+   &__icons {
+    margin: 30px 900px;
+  }
+  
+  &__img {
+    padding: 10px 30px;
+  }
+
+  &__logo {
+    margin: 50px 1250px;
+  }
+}
