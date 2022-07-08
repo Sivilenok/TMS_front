@@ -14,10 +14,6 @@
 	@media (max-width: 768px) {
 		width: 771px;
 	}
-
-	@media (max-width: 601px) {
-		width: 100%;
-	}
 }
 
 @mixin posCenter {
@@ -78,13 +74,13 @@
 }
 
 @mixin mediaTablet {
-	@media screen and (max-width: 1199px) {
+	@media screen and (max-width: 1024px) {
 		@content;
 	}
 }
 
 @mixin mediaMobile {
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: 320px) {
 		@content;
 	}
 }

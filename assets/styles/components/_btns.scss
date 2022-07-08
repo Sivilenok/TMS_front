@@ -1,7 +1,7 @@
 .btn {
     width: 270px;
     height: 60px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fontFamily;
     font-weight: 600;
     font-size: 18px;
     border: none;
@@ -17,7 +17,7 @@
   width: 270px;
   height: 60px;
   border: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $fontFamily;
   font-weight: 600;
   background-color: #EC7979;
   color: #FFFFFF;

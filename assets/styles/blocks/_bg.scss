@@ -3,38 +3,58 @@
     background-size: cover;
     height: 100vh;
 
-    &--logo {
+    &__logo {
         width: 100px;
         height: 52px;
         position: absolute;
     }
 
-    &--title {
+    &__title {
         width: 670px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
-        font-size: 48px;
-        line-height: 56px;
+        @include remLh (56)
+        @include fontSize (48);
         display: flex;
         align-items: center;
         text-transform: uppercase;
         color: #FFFFFF;
         text-align: start;
         padding: 30px 0 0;
+
+        @include mediaTablet {
+          @include fontSize(36)
+          @include remLh(42)
+        }
+
+
+        @include mediaMobile {
+          @include fontSize(36)
+          @include remLh(42)
+        }
     }
 
-    &--container {
+    &__container {
         display: flex;
         padding: 0;
         margin: 170px 170px;
+
+
+        @include mediaTablet {
+            width: 984px;
+        }
+
+        @include mediaMobile {
+            width: 100%;
+        }
     }
 
-    &--details-wrapper {
+    &__details-wrapper {
         display: inline-block;
       }
 
-    &--descr {
+    &__descr {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -45,7 +65,7 @@
         color: #FFFFFF;
       }
 
-      &--btn {
+      &__btn {
         background: rgba(0, 0, 0, 0.5);
         background-color: transparent;
         border: 2px solid #FFFFFF;
@@ -67,7 +87,7 @@
     border-radius: 10px;
     margin: 0px 50px 153px;
 
-    &--controls {
+    &__controls {
         display: flex;
         flex-direction: column;
         padding: 100px 60px 75px 50px;
@@ -85,11 +105,11 @@
         text-align: center;
         margin-bottom: 70px;
 
-      &--title--text-red {
+      &__title--text-red {
         color: #EC7979;
       }
 
-      &--control {
+      &__control {
         padding: 16px 0;
         border-top: none;
         border-left: none;
@@ -102,7 +122,7 @@
         color: #BDBDBD;
       }
      
-      &--get-start-btn {
+      &__get-start-btn {
         border: none;
         height: 60px;
         background: #EC7979;

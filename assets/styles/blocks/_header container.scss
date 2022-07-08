@@ -11,25 +11,75 @@
     }
 }
 
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    display: inline-block;
-}
-
 .nav {
-    &__list {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        list-style: none;
-        align-items: center;
+
+    @extend %flexCenter;
+    @include mediaMobile {
+        display: none;
+        &.active {
+            display: flex;
+        }
     }
     
-    &-item {
-        color: white;
-        align-items: center;
-        padding: 0 35px;
+    &-burger {
+        display: none;
+        outline: none;
+        background:transparent;
+        border: none;
+        position: relative;
+        z-index: 2;
+        
+        @include mediaMobile {
+            display: block; 
+        }
     }
 
+
+    &__list {
+        @extend %flexCenter;
+        @extend %transitionAll;
+       
+        @include mediaMobile {
+            display: block;
+            text-align: center;
+            position:fixed; 
+            width: 100%;
+            height: 100%;
+            padding: 100px 0 0 0;
+            top:100%;
+            left: 0;
+            background-color: black;
+            z-index: 1;
+            overflow: auto;
+            &.active {
+                top: 0;
+            }
+        }    
+
+    &-item {
+        @include fontStyle($fontOpenSans,$fontSemiBold, 14);
+        padding: 30px;
+        @extend %transitionAll;
+        
+        &:hover {
+            background-color: $colorRed;
+            @extend %cursorPointer;
+        }
+        &:active {
+            background-color: $colorDarkRed;
+        }
+    }
+
+    &-link {
+        @include textUpCenter(uppercase,null);
+        
+        &:link {
+            color: $colorWhite;
+        }
+        &:visited {
+            color: $colorWhite;
+        }
+        
+    }
+  } 
 }

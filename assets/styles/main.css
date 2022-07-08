@@ -281,7 +281,8 @@ h1, h2, h3, h4, h5, h6, p {
   list-style: none;
   align-items: center;
 }
-.nav__list-item {
+
+.nav-list__item {
   height: 100%;
   display: flex;
   color: white;
@@ -405,7 +406,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
   text-align: center;
 }
-.tabs--active, .tabs:hover {
+.tabs__item--active, .tabs:hover {
   top: 1px;
   cursor: pointer;
   border-top: 1px solid #C6CBCD;
@@ -521,7 +522,6 @@ h1, h2, h3, h4, h5, h6, p {
   width: 670px;
   border-radius: 10px;
   margin: 0px 50px 153px;
-  margin-left: 1000px;
 }
 
 .forms__controls {
@@ -626,7 +626,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   padding: 0 100px;
   margin: 0 auto;
-  padding-top: 250px;
+  padding-top: 50px;
 }
 
 
