@@ -11,9 +11,16 @@
   <body>
     <header class="header">
       <div class="container header-container">
-          <img class="axit" src="./assets/images/logo.png" alt="logo.png">
+        <div class="header__logo--wrapper">
+          <a class="header__logo-link" href="/">
+            <img class="header__logo" src="./assets/images/logo.png" alt="logo.png">
+          </a>
+        </div>
+          
 
-          <button class="nav-burger icon-bars icon" type="button" data-goto =".nav"></button>
+          <button class="nav__burger" type="button">
+
+          </button>
           <ul class="nav__list">
             <li class="nav__list-item"><a href="#" class="nav__list-link">Features</a></li>
             <li class="nav__list-item"><a href="#" class="nav__list-link">About</a></li>
@@ -31,10 +38,10 @@
               <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
               <div class="banner__separator"></div>
               <h5 class="banner__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <button class="banner__btn">Download</button>
+              <button class="button button-white banner__btn">Download</button>
           </div>
-          <form class="forms">
-            <div class="forms__controls">
+          <form class="banner__form">
+            <div class="form__controls">
               <h4 class="form__title">Try Your <span class="form__title--text-red">FREE</span>Trial Today</h4>
               <input type="text" class="form__control" placeholder="Name">
               <input type="email" class="form__control" placeholder="Email">

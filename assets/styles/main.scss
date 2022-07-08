@@ -5,17 +5,18 @@
 
 // components
 @import './components/btns';
-
-
+@import './components/separator';
 
 // blocks
-@import './blocks/about.scss';
-@import './blocks/customers.scss';
-@import './blocks/header container.scss';
-@import './blocks/pricing_options.scss';
-@import './blocks/tabs.scss';
+@import './blocks/header';
+@import './blocks/banner';
+
+@import './blocks/about';
+@import './blocks/customers';
+@import './blocks/pricing_options';
+@import './blocks/tabs';
 @import './blocks/banner_2';
-@import './blocks/bg';
 @import './blocks/contact';
-@import './blocks/footer';
 @import './blocks/social';
+
+@import './blocks/footer';

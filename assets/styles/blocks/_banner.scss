@@ -1,0 +1,140 @@
+.banner {
+  background: linear-gradient($colorGradient), url('../images/banner__image.png') center;
+  background-size: cover;
+  height: 100vh;
+
+  @include mediaTablet {
+      height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 245px 15px 185px;
+    gap: 30px;
+
+    @include mediaTablet {
+        padding: 150px 15px 75px;
+    }
+
+    @include mediaMobile {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 100px 15px;
+    }
+  }
+
+  &__details-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include mediaMobile {
+      margin: 0;
+    }
+  }
+  
+  &__logo {
+    width: 165px;
+    height: 55px;
+    margin-bottom: 70px;
+    @include mediaTablet {
+        width: 65px;
+        height: 40px;
+    }
+    @include mediaMobile {
+      display: none;
+    }
+  }
+
+  &__title {
+      @include fontStyle($fontRaleway, 500, 48);
+      color: white;
+      text-transform: uppercase;
+
+      @include mediaTablet {
+          @include fontSize(36);
+
+      }
+      @include mediaMobile {
+          // @include fontSize(36);
+          text-align: center;
+      }
+  }
+
+        
+
+  &__descr {
+    @include fontStyle($fontRaleway, $fontNormal, 18);
+    color: white;
+    margin-bottom: 42px;
+
+    @include mediaTablet {
+        @include fontSize(14);
+    }
+    @include mediaMobile { 
+        padding: 0;
+        text-align: center;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.form {
+  &__controls {
+      display: flex;
+      flex-direction: column;
+      padding: 100px 60px 75px 50px;
+      height: 450px;
+      width: 470px;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+    @include fontStyle($fontOpenSans, $fontBold, 24);
+    @include textUpCenter(uppercase,null);
+    padding: 30px 15px 0 15px;
+
+    @include mediaTablet {
+        @include fontSize(24);
+    }
+    @include mediaMobile {
+        @include fontSize(14);
+        margin-bottom: 35px;
+    }
+
+
+    &__title--text-red {
+      color: $colorRed;
+    }
+
+    &__control {
+      padding: 16px 0;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+      border-bottom: 1px solid #BDBDBD;
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #BDBDBD;
+    }
+    
+    &__get-start-btn {
+      border: none;
+      height: 60px;
+      background: #EC7979;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 0px 0px 10px 10px;
+      text-transform: capitalize;
+      -webkit-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+    }
+  }
+}

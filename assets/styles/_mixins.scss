@@ -55,28 +55,7 @@
 }
 
 @mixin placeholder($color, $font: sans-serif, $size: 14px) {
-	&::-webkit-input-placeholder {
-		opacity: 1;
-		font-family: $font;
-		text-transform: uppercase;
-		color: $color;
-		@include fontSize($size);
-	}
-	&:-moz-placeholder {
-		opacity: 1;
-		text-transform: uppercase;
-		font-family: $font;
-		color: $color;
-		@include fontSize($size);
-	}
-	&::-moz-placeholder {
-		opacity: 1;
-		text-transform: uppercase;
-		font-family: $font;
-		color: $color;
-		@include fontSize($size);
-	}
-	&:-ms-input-placeholder {
+	&::placeholder {
 		opacity: 1;
 		text-transform: uppercase;
 		font-family: $font;
@@ -97,10 +76,10 @@
 	}
 }
 
-%transitionAll {
+@mixin transitionAll {
     transition: all .3s  ease-in-out;
 }
 
-%cursorPointer {
+@mixin cursorPointer {
     cursor: pointer;
 }

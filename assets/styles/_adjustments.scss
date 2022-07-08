@@ -1,22 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-
-body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-  }
-
-
-body {
-    @include fontStyle($fontRaleway, $fontNormal, 18);
-    &.lock {
-      overflow: hidden;
-    }
-  }
 
 :root {
     --body-color: #fff;
@@ -26,9 +10,9 @@ body {
 img {
     max-width: 100%;
     display: block;
-  }
+}
 
-html {
+html, body {
     font: var(--basic-font);
     width: 100%;
     min-height: 100vh;
@@ -43,8 +27,6 @@ ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    text-align: center;
 }
 
 a {

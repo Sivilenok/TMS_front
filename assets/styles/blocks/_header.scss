@@ -1,0 +1,75 @@
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: $colorBlack;
+
+    .container {
+        @include flex(space-between,center, row);
+        @include mediaMobile {
+            padding: 20px;
+        }
+    }
+
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+
+        &--wrapper {
+            width: 85px;
+            height: 32px;
+        }
+    }
+
+    .nav {
+        @include flexCenter;
+        
+        &__burger {
+            display: none;
+            outline: none;
+            background:transparent;
+            border: none;
+            
+            @include mediaMobile {
+                display: block; 
+            }
+        }
+
+
+        &__list {
+            display: flex;  
+
+            &-item {
+                width: 115px;
+                height: 75px;
+                @include flexCenter;
+                @include transitionAll;
+                
+                &:hover {
+                    background-color: $colorRed;
+                    @include cursorPointer;
+                }
+                &:active {
+                    background-color: $colorDarkRed;
+                }
+            }
+
+            &-link {
+                @include fontStyle($fontOpenSans,$fontSemiBold, 14);
+                text-transform: capitalize;
+
+                &:link {
+                    color: $colorWhite;
+                }
+                &:visited {
+                    color: $colorWhite;
+                }
+            }
+        }
+
+        @include mediaMobile {
+            display: none;
+        }
+        
+    } 
+}
