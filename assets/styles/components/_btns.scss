@@ -33,6 +33,7 @@
     &-red {
         background: $colorRed;
         border: none;
+        color: $colorWhite;
 
         &:hover {
             background-color: $colorDarkRed;
@@ -41,4 +42,14 @@
             background-color: $colorRed;
         }
     }
+}
+
+.form__get-start-btn {
+    @include fontSize(15);
+    background: $colorRed;
+    border-radius: 0px 0px 10px 10px;
+    width: 470px;
+    padding: 20px 0;
+    border: 0;
+    color: $colorWhite;
 }

@@ -3,11 +3,11 @@
     &__separator {
         width: 170px;
         height: 1px;
-        margin: 55px 0px 45px;
+        margin: 55px 0 40px;
         background-color: white;
         @include mediaTablet {
             width: 140px;
-            margin: 40px auto 30px;
+            margin: 40px 0 30px;
         }
         @include mediaMobile {
             width: 135px;

@@ -1,5 +1,5 @@
 .banner {
-  background: linear-gradient($colorGradient), url('../images/banner__image.png') center;
+  background: url('../images/banner__image.png') center;
   background-size: cover;
   height: 100vh;
 
@@ -35,7 +35,7 @@
   &__logo {
     width: 165px;
     height: 55px;
-    margin-bottom: 70px;
+
     @include mediaTablet {
         width: 65px;
         height: 40px;
@@ -90,13 +90,14 @@
       padding: 100px 60px 75px 50px;
       height: 450px;
       width: 470px;
-  }
+      background-color: $colorWhite;
+      border-radius: 10px;
+      }
 
   &__title {
     margin-bottom: 75px;
     @include fontStyle($fontOpenSans, $fontBold, 24);
     @include textUpCenter(uppercase,null);
-    padding: 30px 15px 0 15px;
 
     @include mediaTablet {
         @include fontSize(24);
@@ -106,23 +107,10 @@
         margin-bottom: 35px;
     }
 
-
-    &__title--text-red {
+    span {
       color: $colorRed;
-    }
-
-    &__control {
-      padding: 16px 0;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      outline: none;
-      border-bottom: 1px solid #BDBDBD;
-      margin-bottom: 16px;
-      font-weight: 400;
-      font-size: 14px;
-      color: #BDBDBD;
-    }
+      padding-right: 5px;
+  }
     
     &__get-start-btn {
       border: none;
@@ -138,3 +126,17 @@
     }
   }
 }
+
+  .form__control {
+    padding: 16px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $colorGrey;
+  }
+
