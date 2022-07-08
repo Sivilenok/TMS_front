@@ -2,6 +2,18 @@
 	--large-container: 1200px;
 }
 
+@mixin flex($justCont, $align, $direct) {
+    display: flex;
+    justify-content: $justCont;
+    flex-direction: $direct;
+    align-items: $align;
+}
+
+@mixin textUpCenter($textUp,$textCenter) {
+    text-transform: $textUp;
+    text-align: $textCenter;
+}
+
 @mixin container {
 	width: var(--large-container);
 	margin: 0 auto;
@@ -74,13 +86,21 @@
 }
 
 @mixin mediaTablet {
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1199px) {
 		@content;
 	}
 }
 
 @mixin mediaMobile {
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 1023px) {
 		@content;
 	}
+}
+
+%transitionAll {
+    transition: all .3s  ease-in-out;
+}
+
+%cursorPointer {
+    cursor: pointer;
 }

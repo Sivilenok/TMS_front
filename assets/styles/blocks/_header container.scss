@@ -1,18 +1,17 @@
 .header {
-    background-color: #000;
-    color: #fff;
-
-    &-container {
-        width: 1200px;
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    position: absolute;
+    width: 100%;
+    background-color: $colorBlack;
 }
 
-.nav {
+ .container {
+        @include flex(space-between,center, row);
+        @include mediaMobile {
+            padding: 20px;
+        }
+    }
 
+.nav {
     @extend %flexCenter;
     @include mediaMobile {
         display: none;

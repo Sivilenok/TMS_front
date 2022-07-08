@@ -1,27 +1,91 @@
-.btn {
-    width: 270px;
-    height: 60px;
-    font-family: $fontFamily;
-    font-weight: 600;
-    font-size: 18px;
-    border: none;
+.banner {
+  width: 370px;
+  @include mediaTablet {
+      width: 300px;
+  }
+  @include mediaMobile {
+      width: 280px;
+  }
+  @media screen and (max-width: 601px) {
+      width: 100%;
+  }
+  @include fontStyle($fontOpenSans,$fontSemiBold,18);
+  color: $colorWhite;
+  @extend %transitionAll;
+  &:hover {
+      @extend %cursorPointer;
+  }
+
+    &__btn {
+    border: $borderBtn;
+        background: rgba(0, 0, 0, 0);
+        padding: 15px 0px;
+        width: 270px;
+        @include mediaTablet {}
+        &:hover {
+            color: $colorRed;
+            border-color: $colorRed;
+        }
+        &:active {
+            background-color: $colorDarkRed;
+            color: $colorWhite;
+            border-color: $colorDarkRed;
+        }
+        @media screen and (max-width: 601px) {
+            width: 100%;
+        }
+        
+  }
 
     &-red {
-        background-color: #c56565;
-        color: #FFFFFF;
-        transition: background-color .3s ease-in-out;
-      }     
-}
+      border: $borderBtn;
+      background: rgba(0, 0, 0, 0);
+      padding: 15px 0px;
+      width: 270px;
+      @include mediaTablet {}
+      &:hover {
+        background-color: $colorDarkRed;
+      }
+      &:active {
+        background-color: $colorRed;
+        box-shadow: inset 0px 0px 10px $colorDarkRed;
+      }
+      @media screen and (max-width: 601px) {
+          width: 100%;
+      }
+      @include mediaTablet {
+          width: 240px;
+      }
+      @include mediaMobile {
+          width: 200px;
+      }
+    }    
+  }
 
-.button {
-  width: 270px;
-  height: 60px;
-  border: 0px;
-  font-family: $fontFamily;
-  font-weight: 600;
-  background-color: #EC7979;
-  color: #FFFFFF;
-}
+.btn {
+  @include fontSize(15);
+        background: $colorRed;
+        border-radius: 0px 0px 10px 10px;
+        width: 470px;
+        padding: 20px 0;
+        border: 0;
+        
+        @include mediaTablet {
+            width: 400px;
+        }
+        @include mediaMobile {
+            width: 300px;
+        }
+        @media screen and (max-width: 601px) {
+            width: 100%;
+        }
+        &:hover {
+            background-color: $colorDarkRed;
+        }
+        &:active {
+            background-color: $colorRed;
+        }
+    }
 
 .banner_2-btn {
   background: rgba(0, 0, 0, 0.5);

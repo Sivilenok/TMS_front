@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 
-.nav-list__item {
+.nav__list-item {
   height: 100%;
   display: flex;
   color: white;

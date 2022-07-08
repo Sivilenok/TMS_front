@@ -1,14 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+  }
+
+
+body {
+    @include fontStyle($fontRaleway, $fontNormal, 18);
+    &.lock {
+      overflow: hidden;
+    }
+  }
+
 :root {
     --body-color: #fff;
     --basic-font: 16px, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
+img {
+    max-width: 100%;
+    display: block;
+  }
 
-
-html, body {
+html {
     font: var(--basic-font);
     width: 100%;
     min-height: 100vh;
@@ -18,11 +38,6 @@ html, body {
     padding: 0;
     background: var(--body-color);
 }
-
-.main {
-    flex: 1 0;
-}
-
 
 ul, ol {
     list-style: none;
@@ -47,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container {
     width: var(--large-container);
-	margin: 0 auto;
+	margin: $marginCenter;
 	padding: 0 15px;
 
     @include mediaTablet {
@@ -56,30 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     @include mediaMobile {
         width: 100%;
+        padding: 0 20px;
     }
 }
 
-.separator {
-    width: 170px;
-    height: 1px;
-    margin: 55px auto 45px auto;
-
-    &--orange {
-        background-color: #EC7979;
-    }
-}
-
-.banner__separator {
-    width: 170px;
-    height: 1px;
-    margin: 55px 0px 45px;
-    background-color: white;
-}
-
-.banner_2-separator {
-    width: 170px;
-    height: 1px;
-    margin: 45px 350px 45px;
-    background-color: white;
-  }
-  

@@ -1,0 +1,70 @@
+.icon {
+    &-facebook.social-media__list-link:hover {
+      color: #4267b3;
+    }
+    &-twitter.social-media__list-link:hover {
+      color: #55acee;
+    }
+    &-linkedin.social-media__list-link:hover {
+      color: #0a66c2;
+    }
+    &-pinterest.social-media__list-link:hover {
+      color: #e60023;
+    }
+    &-instagram.social-media__list-link:hover {
+      color: #c13584;
+    }
+    &-github.social-media__list-link:hover {
+      color: #211f1f;
+    }
+    &-rss.social-media__list-link:hover {
+      color: #ee802f;
+    }
+  
+    &-bars {
+      color: rgb(215, 211, 211);
+      @include fontSize(24);
+  
+      &:active {
+        color: $colorWhite;
+      }
+    }
+    &-xmark {
+      @include fontSize(24);
+      color: rgb(215, 211, 211);
+      &:active {
+        color: $colorWhite;
+      }
+    }
+  }
+  
+  .social-media__list-link {
+    @include fontSize(50);
+    color: $colorBrand;
+    @extend %transitionAll;
+    @include mediaTablet {
+      @include fontSize(45);
+    }
+    @include mediaMobile {
+      @include fontSize(28);
+    }
+    &:hover {
+      @extend %cursorPointer;
+    }
+  }
+  
+  .footer__list-link {
+    @include fontSize(50);
+    color: $colorBrand;
+    @extend %transitionAll;
+    @include mediaTablet {
+      @include fontSize(45);
+    }
+    @include mediaMobile {
+      @include fontSize(26);
+    }
+    &:hover {
+      @extend %cursorPointer;
+      color: $colorWhite;
+    }
+  }

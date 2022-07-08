@@ -1,0 +1,35 @@
+
+.banner{
+    &__separator {
+        width: 170px;
+        height: 1px;
+        margin: 55px 0px 45px;
+        background-color: white;
+        @include mediaTablet {
+            width: 140px;
+            margin: 40px auto 30px;
+        }
+        @include mediaMobile {
+            width: 135px;
+            margin: 40px auto;
+        }
+    }
+    
+    &_2-separator {
+        width: 170px;
+        height: 1px;
+        margin: 45px 350px 45px;
+        background-color: white;
+      }
+}
+
+
+.separator {
+    width: 170px;
+    height: 1px;
+    margin: 55px auto 45px auto;
+
+    &--orange {
+        background-color: #EC7979;
+    }
+}
