@@ -9,19 +9,19 @@
     padding-top: 10px;
       @include mediaMobile {
        text-align: center;
-  }
+    }
+}
   
   &__icons {
-    @include flex;
+    display: flex;
   }
 
   &__img {
-    width: 100%;
-    @include flex;
-
-    @include mediaMobile {
-      margin-right: 20px;
-    }
+      margin-right: 30px;
+      @extend %flexCenter;
+      @include mediaMobile {
+        margin-right: 20px;
+      }
   }
   
  &__media {
@@ -35,8 +35,7 @@
     @include mediaMobile {
       @include fontSize(18);
     }
-  }
-}
+ }
   
   &__secondary-title {
     @include fontStyle(null,$fontNormal,18);
@@ -46,4 +45,4 @@
 					margin-bottom: 30px;
 				}
     }
- }
+}

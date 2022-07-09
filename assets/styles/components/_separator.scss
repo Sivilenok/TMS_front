@@ -4,7 +4,7 @@
         width: 170px;
         height: 1px;
         margin: 55px 0 40px;
-        background-color: white;
+        background-color: $colorWhite;
         @include mediaTablet {
             width: 140px;
             margin: 40px 0 30px;
@@ -19,7 +19,7 @@
         width: 170px;
         height: 1px;
         margin: 45px 350px 45px;
-        background-color: white;
+        background-color: $colorWhite;
       }
 }
 
@@ -30,6 +30,6 @@
     margin: 55px auto 45px auto;
 
     &--orange {
-        background-color: #EC7979;
+        background-color: $colorRed;
     }
 }

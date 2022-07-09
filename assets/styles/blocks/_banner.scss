@@ -30,11 +30,11 @@
     @include mediaMobile {
       margin: 0;
     }
-  }
   
-  &__logo {
-    width: 165px;
-    height: 55px;
+      &__logo {
+        width: 165px;
+        height: 55px;
+      }
 
     @include mediaTablet {
         width: 65px;
@@ -44,6 +44,11 @@
       display: none;
     }
   }
+} 
+
+.banner__logo-wrapper {
+  display: flex;
+}
 
   &__title {
       @include fontStyle($fontRaleway, 500, 48);
@@ -80,7 +85,7 @@
     display: flex;
     flex-direction: column;
   }
-}
+
 
 
 .form {

@@ -27,6 +27,7 @@
             align-items: center;
             text-align: center;
             text-transform: capitalize;
+            padding: 8px;
           }
           
           &__image--wrapper {
@@ -59,17 +60,17 @@
           text-align: center;
           text-transform: capitalize;
           margin-bottom: 110px;
-      }
+        }
   
-      &__main-title {
-          font-family: 'Raleway';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 36px;
-          text-align: center;
-          align-items: center;
-          text-transform: capitalize;
-          padding: 50px;
-      }
+        &__main-title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            text-align: center;
+            align-items: center;
+            text-transform: capitalize;
+            padding: 50px;
+        }
     
     }
