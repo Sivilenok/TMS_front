@@ -1,8 +1,8 @@
 .contact-us {
     margin-top: 70px;
-    background-color: #fff;
+    background-color: $colorWhite;
 
-    &_controls--wrapper {
+    &__controls--wrapper {
         display: flex;
         margin-bottom: 50px;
         gap: 0 30px;
@@ -20,11 +20,11 @@
         border-left: none;
         border-right: none;
         outline: none;
-        border-bottom: 1px solid #BDBDBD;
+        border-bottom: 1px solid $colorGrey;
         margin-bottom: 35px;
         font-weight: 400;
         font-size: 14px;
-        color: #BDBDBD;
+        color:$colorGrey;
       }
       
       &__right-controls {
@@ -57,25 +57,28 @@
   .contact {
 
     &__title {
-        font-family: 'Raleway';
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
         text-transform: uppercase;
-        color: #000000;
-  }
+        color: $colorBlack;
+        text-align: center;
+    }
 
   &-container {
-    margin: 50px 800px;
+    margin: 100px auto;
+
   }
 
   &__secondary-title {
-    font-family: 'Raleway';
+    font-family: $fontRaleway;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #86878B;
+    color: $colorGrey;
+    text-align: center;
   }
 }

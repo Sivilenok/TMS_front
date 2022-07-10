@@ -1,6 +1,6 @@
 .rewies {
   
-    font-family: "Raleway";
+    font-family: $fontRaleway;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -8,15 +8,14 @@
     text-align: center;
     text-transform: uppercase;
     padding: 100px 0 50px 0;
-    color: #000000;
+    color: $colorBlack;
   }
 
   .customers {
     margin: 30px;
 
-
       &_title {
-        font-family: 'Raleway';
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
@@ -28,7 +27,7 @@
       }
   
       &_secondary-title {
-        font-family: "Raleway";
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -60,20 +59,20 @@
         color: #86878B;
         margin: 30px;
         padding: 30px 30px;
-        top: 50%;
-        background:#E2E2E2;
+        background: #E2E2E2;
         border-radius: 10px;
-    }
-         &__::after {
+        position: relative;
+    
+         &::after {
           content: "";
           position: absolute;
           border: 30px solid transparent;
           border-top: 40px solid #e2e2e2;
-          bottom: 0;
+          bottom: -25%;
           left: 20%;
          }
       }
-      
+    } 
   
     .customers {
   
@@ -93,7 +92,7 @@
       
       
       &_name {
-        font-family: "Open Sans";
+        font-family: $fontOpenSans;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -105,7 +104,7 @@
       }
       
       &_post {
-        font-family: "Raleway";
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;

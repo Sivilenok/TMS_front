@@ -2,6 +2,9 @@
   width: 1170px;
   height: 540px;
   background: white;
+  padding: 100px 0 50px 0;
+  background: $colorWhite;
+  margin: 50px auto;
 
   @include mediaMobile {
     padding: 50px 0;
@@ -31,7 +34,7 @@
     background: white;
     z-index: 2;
   
-    &__text {
+    &-text {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       font-weight: 400;
@@ -59,38 +62,36 @@
     width: 40%;
     display: flex;
   }
-
-  &__details {
-    padding: 50px 30px 50px 100px;
-    width: 60%;
-  } 
-          
-  &__title {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    color: #000000;
-    margin-bottom: 55px;
-  }
-  
-  &__descr {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    margin-bottom: 30px;
-  }
-
 }
 
 .tabs__tab-content {
   display: flex;
-  border: 1px solid #C6CBCD;
+  border: $borderTab;
 }
 
+.tab-content__details {
+    padding: 50px 30px 50px 100px;
+    width: 60%;
+  }
+
+.tab-content__title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 55px;
+}
+
+.tab-content__descr {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 30px;
+}
 
   
         

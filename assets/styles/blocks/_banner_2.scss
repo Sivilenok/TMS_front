@@ -2,23 +2,27 @@
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/bg.png) center no-repeat;
     background-size: cover;
     height: 50vh;
-  
 
-&__container {
-    display: flex;
-    padding: 0 100px;
-    margin: 0 auto;
-    padding-top: 250px;
+  &-details--wrapper {
+    display: inline-block;
   }
+  
+  &-container {
+      display: flex;
+      padding: 0 200px;
+      margin: 0 auto;
+      padding-top: 150px;
+  }
+
   &__separator {
     width: 170px;
     height: 1px;
     margin: 45px 350px 45px;
-    background-color: white;
+    background-color: $colorWhite;
   }
 
-&__title {
-    font-family: 'Raleway';
+&-title {
+    font-family: $fontRaleway;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -26,28 +30,19 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $colorWhite;
   }
 
-&__descr {
-    font-family: 'Raleway';
+&-descr {
+    font-family: $fontRaleway;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: $colorWhite;
   }
-  
-&__btn {
-    background: rgba(0, 0, 0, 0.5);
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: white;
-    height: 58px;
-    width: 270px;
-    border-radius: 0px;
-    margin: 60px 300px;  
-  }
+
 }
+

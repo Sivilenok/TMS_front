@@ -1,15 +1,14 @@
-.container {
-    &__footer-container {
-    background-color: #000;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-  }
+.footer-container {
+  background-color: #000;
+  color: $colorWhite;
+  position: absolute;
+  width: 100%;
 }
 
 .footer {
    &__icons {
-    margin: 30px 900px;
+    display: flex;
+    margin: 40px 500px;
   }
   
   &__img {
@@ -17,6 +16,6 @@
   }
 
   &__logo {
-    margin: 50px 1250px;
+    margin: 50px 800px;
   }
 }

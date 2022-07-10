@@ -24,12 +24,10 @@
 }
 
 
-.separator {
+.separator--orange {
     width: 170px;
     height: 1px;
     margin: 55px auto 45px auto;
-
-    &--orange {
-        background-color: $colorRed;
-    }
+    background-color: $colorRed;
+    
 }
